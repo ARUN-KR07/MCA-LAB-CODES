@@ -1,0 +1,34 @@
+# Function to add two numbers
+def add(x, y):
+    return x + y
+
+# Function to subtract two numbers
+def subtract(x, y):
+    return x - y
+
+# Function to multiply two numbers
+def multiply(x, y):
+    return x * y
+
+# Function to divide two numbers
+def divide(x, y):
+    if y == 0:
+        return "Cannot divide by zero"
+    return x / y
+
+# Calculator function with three variables
+def calculator(x, y, operation):
+    if operation == "add":
+        return add(x, y)
+    elif operation == "subtract":
+        return subtract(x, y)
+    elif operation == "multiply":
+        return multiply(x, y)
+    elif operation == "divide":
+        return divide(x, y)
+    else:
+        return "Invalid operation"
+
+# Example usage:
+result = calculator(5, 3, "add")
+print("Result:", result)
